@@ -1,0 +1,15 @@
+{
+  "name": "bower-compass-bootstrap",
+  "homepage": "https://github.com/apraditya/compass-twitter-bootstrap",
+  "version": "2.3.2",
+  "_release": "2.3.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.3.2",
+    "commit": "2b73bed5025e4c530a0288f6268210f688645321"
+  },
+  "_source": "git://github.com/apraditya/compass-twitter-bootstrap.git",
+  "_target": "~2.3.2",
+  "_originalSource": "bower-compass-bootstrap",
+  "_direct": true
+}

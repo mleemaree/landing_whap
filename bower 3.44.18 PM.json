@@ -1,0 +1,33 @@
+{
+  "name": "landingfinal",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "1.2.16",
+    "json3": "~3.3.1",
+    "es5-shim": "~3.1.0",
+    "jquery": "~1.11.1",
+    "bootstrap-sass-official": "~3.1.1",
+    "angular-resource": "1.2.16",
+    "angular-cookies": "1.2.16",
+    "angular-sanitize": "1.2.16",
+    "angular-animate": "1.2.16",
+    "angular-touch": "1.2.16",
+    "angular-route": "1.2.16",
+    "jquery-ui": "~1.11.2",
+    "waypoints": "~3.1.1",
+    "skrollr": "~0.6.29",
+    "bower-compass-bootstrap": "~2.3.2",
+    "compass-mixins": "~1.0.2",
+    "bootstrap": "~3.3.2",
+    "font-awesome": "~4.3.0",
+    "normalize-scss": "~3.0.2",
+    "textillate": "*",
+    "animate.css": "~3.2.0",
+    "animate-css": "~3.2.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.16",
+    "angular-scenario": "1.2.16"
+  },
+  "appPath": "app"
+}

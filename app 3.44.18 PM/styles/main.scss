@@ -1,0 +1,586 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "compass-mixins/lib/_compass.scss";
+@import "normalize-scss/_normalize.scss";
+// endbower
+
+
+
+body {
+  background-color:#f3f3f3;
+  font-family:"Montserrat";
+  font-weight:300;
+  background: url('../images/background.jpg') repeat;
+}
+
+
+/* Custom page header */
+.header {
+  background-color: #2c525d;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding: 10px;
+    color:white;
+    font-family: "Mr Dafoe";
+    padding-left:60px;
+    font-size:2em;
+  }
+}
+
+ul.nav .active a {
+    background-color: #2c525d;
+    &:hover{
+      background-color:#2c525d;
+    }
+}
+
+
+
+/*----- ===== Main Content ====== -----*/
+
+
+/*------ Global Content -------*/
+
+
+div{
+  display:block;
+}
+
+.container,
+.container-fluid{
+  padding:0;
+  margin:0;
+  width:auto;
+}
+
+div.center{
+  text-align:center;
+}
+
+div.clear{
+  @mixin clearfix {
+  overflow: hidden;
+  @include has-layout;
+  &:after{
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    content: ".";
+  }
+}
+}
+
+div.mountains{
+  background-image: url('../images/mountains.png');
+  @include background-size(cover);
+  color:white;
+  a{
+    background-color: #ef5350;
+    border:none;
+    color:white;
+  }
+  img{
+    margin:2%;
+  }
+}
+
+form{
+  text-align:center;
+}
+
+form input,
+form select,
+form button,
+textarea{
+  margin: 1% 0 1% 0;
+}
+
+/* ------ Forms ------ */
+
+.form-control{
+  background:transparent;
+  border: 2px solid white;
+  @include border-radius(2px);
+  color:white;
+}
+
+button.btn{
+  background-color: #ef5350;
+  color:#f3f3f3;
+  border:none;
+  @include border-radius(2px);
+  width: 90%;
+  margin: 0 auto 0 auto;
+  text-transform:uppercase;
+  margin-top:2%;
+  &:hover{
+    background-color: #ef5350;
+    color:white;
+  }
+}
+
+select.form-control{
+  background:transparent;
+  border: 2px solid white;
+  @include border-radius(2px);
+}
+
+input[placeholder]{
+  color:white;
+}
+
+option{
+  color:white;
+}
+
+/* ----- Mountains ------ */
+
+h2.WHAP{
+  padding:35% 0 5% 15%;
+}
+
+form.head{
+  padding: 0 0 0 15%;
+}
+
+img.firstPhone{
+  padding: 10% 20% 0 0;
+}
+
+div.here{
+  text-align:center;
+}
+
+/* ------ EXPLORE ----- */
+
+div.explore{
+  margin-top:200px;
+  h2,
+  p{
+  position:relative;
+  top:100px;
+  left:10%;
+  }
+  img.desktop{
+    position:relative;
+    top:70px;
+    right:10%;
+    height:450px;
+    width:auto;
+  }
+  img.exploreCard{
+    margin: 0 auto;
+  }
+}
+
+#ideas{
+  -vendor-animation-duration: 5s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+
+}
+
+.CAT{
+  margin-bottom: 300px;
+  background-image: url("../images/waves.png");
+  @include background-size(120% 200%);
+  height: 600px;
+  color:white;
+  text-align:center;
+  h3,
+  h4{
+    font-size:5em;
+  }
+
+
+}
+
+.DOG {
+  margin-top:300px;
+  text-align:center;
+}
+
+.createTrip{
+  margin: 120px;
+  position:relative;
+}
+
+
+/* ------ CREATE A TRIP ------ */
+
+
+div.createATrip{
+  position:relative;
+}
+
+div.iPhoneBkg{
+  background-image: url('../images/iPhone.png');
+  @include background-size(cover);
+  height:600px;
+  width:350px;
+  position:relative;
+  left:200px;
+}
+
+div.content{
+  position:absolute;
+  height: 465px;
+  width: 270px;
+  margin-top:70px;
+  margin-left:35px;
+  overflow:hidden;
+  @include border-radius(1px);
+  border: 2px solid #0f0f10;
+
+}
+
+div.createATrip{
+  position: relative;
+  overflow:hidden;
+  height: 3000px;
+  clear:both;
+}
+.CAT-device-wrapper{
+  width:50%;
+  height:100%;
+  display:block;
+  position:relative;
+}
+
+.CAT-text-wrapper{
+  position:relative;
+  top:250px;
+  float:right;
+  margin-right:5%;
+}
+
+div.steps{
+  text-align:right;
+  h4{
+    font-size:2.5em;
+    font-weight:700;
+    padding:0;
+  }
+  div{
+    margin:0 0 10% 0;
+  }
+}
+
+div.create-bullet{
+  box-sizing:border-box;
+  margin-top: 35vh;
+  padding:50px 0;
+  how{
+  margin-top:100px;
+}
+}
+
+/*.inner{
+  position:fixed;
+  top:40%;
+  right:10%;
+}
+*/
+.CANT{
+  margin-top: 100px;
+}
+
+CANT2{
+  padding-bottom: 500px;
+}
+
+.createButton{
+  margin: 0 auto;
+  padding-top: 5%;
+  height:100px;
+  width:auto;
+}
+
+div.createANewTrip{
+  margin-top: 45%
+}
+
+/* ------ VOTE ------ */
+
+
+div.oscuro{
+  background-color: #1b1b1b;
+  color:white;
+  margin: 150px 50px;
+  clear:both;
+  div{
+    padding: 2%;
+  }
+  img.arrowDown{
+    padding:2%;
+  }
+  img.votes{
+    margin: 0 auto;
+    padding: 5%;
+  }
+  h2{
+    font-size: 3em;
+  }
+}
+/*----- ITINERARY ------*/
+
+div.itinerary{
+  padding: 2;
+}
+
+/* ------ ONGOING -----*/
+
+div.ongoing{
+  padding: 100px 0;
+  @mixin clearfix{
+  overflow: hidden;
+  @include has-layout;
+}
+  h2{
+    padding: 5%;
+  }
+}
+
+.ongoingCard{
+  margin: 2% auto;
+}
+
+.ongoingTrip{
+  margin: 50px;
+}
+
+
+
+
+/* ----- JOIN ------ */
+
+
+div.join{
+  background-image: url('../images/beach.png');
+  @include background-size(cover);
+  color:white;
+  height:650px;
+}
+
+.join form{
+  padding: 10% 10%;
+}
+
+.join button{
+  margin-top: 10%;
+}
+
+div.join img{
+  padding: 2%;
+}
+
+.joinToday{
+  padding: 5% 0 0 5%;
+}
+
+/* ------ SPONSORS ------ */
+
+div.sponsors{
+  text-align:center;
+  background-color: white;
+  @include border-radius(2px);
+  @include box-shadow(rgba(black,0.2) 0 0 5px);
+  position:relative;
+  top: 30%;
+  img{
+    
+  }
+  .sponsor{
+
+      vertical-align:center;
+
+
+  }
+}
+
+
+
+/*-----End Main Content ------*/
+
+
+
+/* Custom page footer */
+div.footer {
+  padding-top: 19px;
+  color: white;
+  background-color: #2c525d;
+  li{
+    display: inline-block;
+  }
+  .social{
+    padding-right: 50px;
+
+  }
+}
+
+
+/*
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 320px){
+  .container{
+    max-width:320px;
+  }
+    h2.WHAP{
+    padding:0;
+  }
+  form.head{
+    padding:0;
+  }
+  div.sponsors{
+    top: 0;
+  }
+  div.explore{
+    margin-top:0;
+  }
+  .CAT,
+  .DOG{
+    margin:0;
+  }
+}
+@media screen and (max-width: 480px){
+  .container{
+    max-width:480px;
+  }
+    h2.WHAP{
+    padding:0;
+  }
+  form.head{
+    padding:0;
+  }
+  div.sponsors{
+    top: 0;
+  }
+   div.explore{
+    margin-top:0;
+  }
+  .CAT,
+  .DOG{
+    margin:0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 767px;
+  }
+   /* Remove the padding we set earlier */
+  .header,
+  .container,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h2.WHAP{
+    padding:0 15px 0 15px;
+  }
+  form.head{
+    padding: 0;
+  }
+  div.explore{
+  h2,
+  p{
+  position:relative;
+  top:0;
+  left:0;
+  }
+  }
+  div.sponsors{
+    top: 0;
+  }
+  img.itin{
+    margin: 0 auto;
+  }
+  div.explore{
+    margin-top:0;
+  }
+  .CAT,
+  .DOG{
+    margin:0;
+  }
+}
+@media screen and (max-width: 991px){
+  .container{
+    max-width:991px;
+  }
+   /* Remove the padding we set earlier */
+  .header,
+  .container,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+   h2.WHAP{
+    padding:0 15px 0 15px;
+  }
+  form.head{
+    padding: 0 15px 0 15px;
+  }
+    div.explore{
+      img.desktop{
+        right:0;
+      }
+  }
+
+}
+@media screen and (max-width: 1199px){
+  .container{
+    max-width:1199px;
+  }
+   /* Remove the padding we set earlier */
+  .header,
+  .container,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  div.createANewTrip{
+    margin-top:30%;
+  }
+}
+
+@media screen and (min-width:990px){
+  div.sponsors{
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 4000px){
+  .container{
+    max-width:4000px;
+  }
+   /* Remove the padding we set earlier */
+  .header,
+  .container,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  div.createANewTrip{
+    margin-top:30%;
+  }
+  
+}
+
+::-webkit-input-placeholder {
+    color:    white;
+}
+:-moz-placeholder {
+    color:    white;
+}
+::-moz-placeholder {
+    color:    white;
+}
+:-ms-input-placeholder {
+    color:    white;
+}
